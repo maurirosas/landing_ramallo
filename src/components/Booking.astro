@@ -1,0 +1,267 @@
+---
+
+---
+
+<section class="booking-container">
+  <div class="booking-info">
+    <div class="booking-card modalidad">
+      <div class="icon">
+        <svg
+          class="booking-icon"
+          viewBox="0 0 134 84"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M91.8005 48.1667L124.183 69.639C124.65 69.948 125.192 70.1252 125.752 70.1519C126.312 70.1785 126.869 70.0536 127.364 69.7903C127.858 69.5271 128.271 69.1354 128.56 68.657C128.848 68.1786 129 67.6314 129 67.0737V16.5317C129.001 15.9891 128.857 15.4562 128.584 14.9866C128.311 14.517 127.918 14.1274 127.445 13.8572C126.972 13.5869 126.435 13.4456 125.89 13.4474C125.345 13.4493 124.809 13.5942 124.338 13.8677L91.8005 32.75M17.4005 5H79.4005C86.2488 5 91.8005 10.5218 91.8005 17.3333V66.6667C91.8005 73.4782 86.2488 79 79.4005 79H17.4005C10.5522 79 5.00049 73.4782 5.00049 66.6667V17.3333C5.00049 10.5218 10.5522 5 17.4005 5Z"
+            stroke="white"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <div class="text">
+        <h3>MODALIDAD</h3>
+        <h2>VIRTUAL</h2>
+      </div>
+    </div>
+
+    <div class="booking-card fecha">
+      <div class="icon">
+        <svg
+          class="booking-icon"
+          viewBox="0 0 121 134"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M35.8338 5.5V30.1M85.1672 5.5V30.1M5.00049 54.7H116M17.3338 17.8H103.667C110.479 17.8 116 23.3069 116 30.1V116.2C116 122.993 110.479 128.5 103.667 128.5H17.3338C10.5223 128.5 5.00049 122.993 5.00049 116.2V73.15V30.1C5.00049 23.3069 10.5223 17.8 17.3338 17.8Z"
+            stroke="white"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <div class="text">
+        <h3>FECHA DE MASTERCLASS</h3>
+        <h2>6 DE MAYO</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="booking-details">
+    <div class="booking-text">
+      <h3 class="booking-highlight">
+        ACCESO GRATUITO Y <br>EXCLUSIVO PARA MÉDICOS
+      </h3>
+      <hr />
+      <p>Regístrate ahora para asegurar tu plaza</p>
+    </div>
+
+    <form class="booking-form">
+      <button type="submit" class="booking-button">RESERVA TU CUPO AHORA</button
+      >
+      <input
+        class="booking-email"
+        type="email"
+        placeholder="Ingresar e-mail"
+        required
+      />
+    </form>
+  </div>
+</section>
+
+<style>
+  .booking-container {
+    background-color: black;
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: sans-serif;
+    justify-content: center;
+  }
+
+  /* Tarjetas de modalidad y fecha */
+  .booking-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .booking-card {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .booking-icon {
+    width: 60px;
+    height: auto;
+  }
+
+  .booking-card h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .booking-card h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  /* Texto + formulario */
+  .booking-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    gap: 25px;
+    margin: auto;
+    text-align: right;
+  }
+
+  .booking-text {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+  }
+
+  .booking-highlight {
+    color: var(--red);
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  .booking-text hr {
+    border: none;
+    border-top: 2px solid white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .booking-text p {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: right;
+  }
+
+  /* Formulario */
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    min-width: 250px;
+    flex: 1;
+    margin-top: 25px;
+  }
+
+  .booking-button {
+    padding: 15px 31px;
+    border: 2px solid var(--red);
+    color: var(--red);
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .booking-button:hover {
+    background-color: var(--red);
+    color: black;
+  }
+
+  .booking-email {
+    padding: 12px 16px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    outline: none;
+    font-size: 0.95rem;
+    background-color: white;
+    color: var(--black);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .booking-email::placeholder {
+    color: var(--red);
+  }
+
+  /* Responsive */
+  @media (max-width: 767px) {
+  .booking-info {
+    flex-direction: column-reverse;
+  }
+
+  .booking-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .booking-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .booking-highlight{
+    text-align: center;
+  }
+
+  .booking-text p{
+    text-align: center;
+  }
+
+  .booking-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px; /* ✅ evita que se expanda todo */
+    width: 100%;
+  }
+
+  .booking-text hr {
+    width: 100%;
+    max-width: 250px;
+    margin: 12px auto;
+  }
+
+  .booking-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .booking-button,
+  .booking-email {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+</style>

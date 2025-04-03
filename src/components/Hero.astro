@@ -1,0 +1,141 @@
+---
+
+---
+
+<section class="hero-container">
+  <section class="hero-text">
+    <h1 class="hero-title">
+      DESCUBRE LA NUEVA <br />ERA DE LA ESTÉTICA <br />MASCULINA
+    </h1>
+    <div class="hero-whiteline"></div>
+    <h2 class="hero-subtitle">
+      MULTIPLICA TUS INGRESOS CON <br />PROCEDIMIENTOS DE ALTA DEMANDA
+    </h2>
+  </section>
+  <section class="hero-image">
+    <img class="hero-image-ramallo" src="/ramallo_1.png" alt="" />
+  </section>
+</section>
+
+<style>
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0px 0 80px;
+  }
+
+  .hero-text {
+    max-width: 50%;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 3vw + 1rem, 3.5rem);
+    font-weight: 900;
+    color: var(--red);
+    margin-bottom: 20px;
+  }
+
+  .hero-whiteline {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 20px 0;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-image-ramallo {
+    width: 85%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+  }
+
+  .hero-image::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, var(--red) 0%, transparent 70%);
+    z-index: 0;
+  }
+
+  .hero-container::before,
+  .hero-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .hero-container::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(230, 72, 72, 0.5), transparent);
+  }
+
+  .hero-container::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(230, 72, 72, 0.5), transparent);
+  }
+
+  @media (max-width: 767px) {
+    .hero-container {
+      flex-direction: column;
+      padding: 5px 20px;
+    }
+
+    .hero-text {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .hero-whiteline {
+      width: 80%;
+      margin: 0 auto 20px auto;
+    }
+
+    .hero-image {
+      width: 100%;
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    .hero-image-ramallo {
+      width: 80%;
+    }
+
+    .hero-image::before {
+      width: 100%;
+      height: 100%;
+      top: 40%;
+    }
+  }
+</style>

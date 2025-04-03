@@ -1,0 +1,202 @@
+<section class="perfil-container">
+  <section class="perfil-section">
+    <section class="perfil-image-area">
+      <div class="perfil-shadow"></div>
+      <img src="/doctor_guante.png" alt="Doctor" class="perfil-image" />
+
+      <div class="perfil-card">
+        <p>
+          Si eres un médico estético, urólogo, cirujano plástico o médico
+          general,esta Masterclass es para ti.
+        </p>
+      </div>
+    </section>
+
+    <section class="perfil-benefits">
+      <div class="benefit-item">
+        <span class="benefit-bar"></span>
+        <p>
+          ¿Quieres aumentar tu consulta con procedimientos de alta rentabilidad?
+        </p>
+      </div>
+      <div class="benefit-item">
+        <span class="benefit-bar"></span>
+        <p>¿Quieres diferenciarte con técnicas avanzadas y en tendencia?</p>
+      </div>
+      <div class="benefit-item">
+        <span class="benefit-bar"></span>
+        <p>
+          ¿Quieres atraer pacientes dispuestos a pagar por procedimientos
+          premium?
+        </p>
+      </div>
+
+      <a href="#" class="perfil-button">ACCEDER AL EVENTO</a>
+    </section>
+  </section>
+</section>
+
+<style>
+  .perfil-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: black;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .perfil-image-area {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .perfil-shadow {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 650px;
+    height: 540px;
+    background: radial-gradient(circle, var(--red) 0%, transparent 70%);
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .perfil-image {
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+  }
+
+  .perfil-card {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px 25px;
+    max-width: 400px;
+    text-align: left;
+    font-size: 1.1rem;
+    z-index: 2;
+    position: relative;
+  }
+
+  .perfil-benefits {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .benefit-bar {
+    width: 6px;
+    height: 50px;
+    background-color: var(--red);
+    flex-shrink: 0;
+  }
+
+  .benefit-item p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .perfil-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    border: 2px solid var(--red);
+    color: var(--red);
+    background: transparent;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.45rem;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      background 0.3s,
+      color 0.3s;
+    max-width: 300px;
+  }
+
+  .perfil-button:hover {
+    background-color: var(--red);
+    color: black;
+  }
+
+  .perfil-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .perfil-container::before,
+  .perfil-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .perfil-container::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(230, 72, 72, 0.5), transparent);
+  }
+
+  .perfil-container::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(230, 72, 72, 0.5), transparent);
+  }
+
+  @media (max-width: 767px) {
+    .perfil-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .perfil-shadow {
+      width: 300px;
+      height: 300px;
+      top: 10%;
+    }
+
+    .perfil-card {
+      text-align: center;
+    }
+
+    .perfil-benefits {
+      align-items: center;
+    }
+
+    .benefit-item {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .perfil-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>

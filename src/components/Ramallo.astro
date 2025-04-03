@@ -1,0 +1,272 @@
+<section class="about-container">
+  <header class="about-header">
+    <h2 class="about-header__name">DR. ÁLVARO RAMALLO</h2>
+    <p class="about-header__subtitle">
+      <em>Especialista en Medicina Estética Masculina</em>
+    </p>
+    <hr class="about-header__line" />
+  </header>
+
+  <section class="about-content">
+    <div class="about-photo">
+      <div class="about-photo__circle">
+        <img
+          src="/ramallo_2.png"
+          alt="Dr. Álvaro Ramallo"
+          class="about-photo__image"
+        />
+      </div>
+    </div>
+
+    <ul class="about-list">
+      <li class="about-list__item">
+        <span class="about-list__dot"></span>
+        Más de 25 años en el campo de la urología y sexología.
+      </li>
+      <li class="about-list__item">
+        <span class="about-list__dot"></span>
+        Pionero en procedimientos de estética íntima masculina en Latinoamérica.
+      </li>
+      <li class="about-list__item">
+        <span class="about-list__dot"></span>
+        Ha invertido más de $40,000 en capacitaciones y certificaciones internacionales.
+      </li>
+      <li class="about-list__item">
+        <span class="about-list__dot"></span>
+        Ha capacitado a más de [x] médicos en procedimientos innovadores.
+      </li>
+      <li class="about-list__item">
+        <span class="about-list__dot"></span>
+        Ha desarrollado un método exclusivo que permite dominar estas técnicas en
+        poco tiempo y aplicarlas con éxito en consulta.
+      </li>
+    </ul>
+  </section>
+
+  <footer class="about-footer">
+    <div class="about-footer__calendar">
+      <svg
+        width="121"
+        height="134"
+        viewBox="0 0 121 134"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M35.8338 5.5V30.1M85.1672 5.5V30.1M5.00049 54.7H116M17.3338 17.8H103.667C110.479 17.8 116 23.3069 116 30.1V116.2C116 122.993 110.479 128.5 103.667 128.5H17.3338C10.5223 128.5 5.00049 122.993 5.00049 116.2V73.15V30.1C5.00049 23.3069 10.5223 17.8 17.3338 17.8Z"
+          stroke="white"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+      <p class="about-footer__text">
+        ENSEÑARÁ TODO EN SU MASTERCLASS GRATUITA. <strong>6 DE MAYO</strong>
+      </p>
+    </div>
+
+    <a href="#" class="about-footer__button">ÚNETE AHORA AL GRUPO EXCLUSIVO</a>
+  </footer>
+</section>
+<style>
+  .about-container {
+  background-color: black;
+  color: white;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-header__name {
+  color: var(--red);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about-header__subtitle {
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.about-header__line {
+  width: 80px;
+  height: 2px;
+  background-color: white;
+  border: none;
+  margin: 10px auto 0 auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Imagen circular */
+.about-photo {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.about-photo__circle {
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.about-photo__image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Lista */
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-list__dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* Footer */
+.about-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+  text-align: left;
+}
+
+.about-footer__calendar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-footer__calendar svg {
+  width: 60px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.about-footer__text {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.about-footer__text strong {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Botón */
+.about-footer__button {
+  padding: 14px 22px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 2px solid var(--red);
+  color: var(--red);
+  background: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.about-footer__button:hover {
+  background-color: var(--red);
+  color: black;
+}
+
+
+/* ============================== */
+/* ========== RESPONSIVE ======= */
+/* ============================== */
+
+@media (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-list {
+    padding: 0 10px;
+  }
+
+  .about-list__item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-footer__calendar {
+    justify-content: center;
+  }
+
+  .about-footer__text strong {
+    font-size: 1.3rem;
+  }
+
+  .about-footer__button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-photo__circle {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+</style>

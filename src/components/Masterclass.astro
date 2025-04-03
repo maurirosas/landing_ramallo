@@ -1,0 +1,239 @@
+<section class="masterclass-wrapper">
+  <section class="masterclass-section">
+    <section class="masterclass-header">
+      <h2>¿QUÉ APRENDERÁS<br />EN LA MASTERCLASS?</h2>
+    </section>
+
+    <section class="masterclass-grid">
+      <article class="masterclass-item">
+        <span class="masterclass-number">1</span>
+        <section class="masterclass-content">
+          <h3>La evolución de la estética íntima masculina</h3>
+          <p>y su rentabilidad en el mercado actual.</p>
+        </section>
+      </article>
+
+      <section class="masterclass-item">
+        <span class="masterclass-number">2</span>
+        <section class="masterclass-content">
+          <h3>Técnicas de agrandamiento con ácido hialurónico</h3>
+          <p>y grasa autóloga, sus diferencias y beneficios.</p>
+        </section>
+      </section>
+
+      <section class="masterclass-item">
+        <span class="masterclass-number">3</span>
+        <section class="masterclass-content">
+          <h3>Aplicación y dosificación de pellets hormonales:</h3>
+          <p>la clave para mejorar la calidad de vida de los pacientes.</p>
+        </section>
+      </section>
+
+      <section class="masterclass-item">
+        <span class="masterclass-number">4</span>
+        <section class="masterclass-content">
+          <h3>Estrategias para atraer pacientes premium</h3>
+          <p>y posicionarte en el mercado de alta demanda.</p>
+        </section>
+      </section>
+    </section>
+
+    <section class="masterclass-footer">
+      <section class="masterclass-button">
+        <button class="masterclass-button-join" type="button"
+          >SÉ PARTE DEL EVENTO</button
+        >
+      </section>
+
+      <div class="masterclass-description">
+        <p>
+          Accede también a un grupo VIP donde recibirás material complementario,
+          grabaciones y contacto directo con el Dr. Ramallo.
+        </p>
+      </div>
+    </section>
+  </section>
+</section>
+
+<style>
+  .masterclass-section {
+    background-color: black;
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Fondo elíptico inclinado */
+  .masterclass-section::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    background: radial-gradient(ellipse at center, #e64848 0%, transparent 70%);
+    z-index: 0;
+  }
+
+  /* Encabezado */
+  .masterclass-header {
+    text-align: center;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  .masterclass-header h2 {
+    color: var(--red);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  /* Grid principal */
+  .masterclass-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  .masterclass-item {
+    background-color: black;
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    padding: 25px 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  /* Número */
+  .masterclass-number {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--red);
+    line-height: 1;
+  }
+  /* Contenido */
+  .masterclass-content h3 {
+    color: var(--red);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .masterclass-content p {
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+  }
+
+  /* Footer */
+  .masterclass-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .masterclass-button {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .masterclass-button-join {
+    padding: 15px 25px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    border: 2px solid var(--red);
+    color: var(--red);
+    background: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .masterclass-button-join:hover {
+    background-color: var(--red);
+    color: var(--black);
+  }
+
+  .masterclass-description {
+    flex: 2;
+    font-weight: 500;
+    min-width: 250px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .masterclass-wrapper {
+    position: relative;
+  }
+
+  .masterclass-wrapper::before,
+  .masterclass-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .masterclass-wrapper::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(230, 72, 72, 0.5), transparent);
+  }
+
+  .masterclass-wrapper::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(230, 72, 72, 0.5), transparent);
+  }
+
+  /* Responsive */
+  @media (max-width: 767px) {
+    .masterclass-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .masterclass-item {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .masterclass-footer {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+
+    .masterclass-description {
+      font-size: 1rem;
+    }
+
+    .masterclass-button {
+      justify-content: center;
+      width: 100%;
+    }
+
+    .masterclass-button-join {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
